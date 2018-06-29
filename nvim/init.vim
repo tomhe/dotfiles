@@ -39,3 +39,11 @@ Plug 'tpope/vim-fugitive'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
+:set number relativenumber
+
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
+

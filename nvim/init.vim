@@ -24,6 +24,7 @@ set directory=~/.vim/tmp
 " Visuals
 syntax on
 set termguicolors
+set background=dark
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')

@@ -15,6 +15,7 @@ Plug 'kaicataldo/material.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-syntastic/syntastic'
 Plug 'airblade/vim-gitgutter'
+Plug 'crusoexia/vim-monokai'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -44,11 +45,16 @@ nnoremap <CR> :nohl<CR>
 set directory=~/.vim/tmp
 
 " Visuals
+" set t_Co=256
 syntax on
-set termguicolors
-set background=dark
+" let g:solarized_termtrans=1
 " let g:solarized_termcolors=256
-colorscheme solarized
+" let g:solarized_visibility="normal"
+" let g:solarized_contrast="normal"
+set termguicolors
+" set background=dark
+" colorscheme solarized
+colorscheme monokai 
 " colorscheme stellarized
 
 set number

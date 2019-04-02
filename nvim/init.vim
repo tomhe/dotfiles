@@ -41,7 +41,7 @@ vno <up> <Nop>
 " map <C-l> <C-W>l
 nnoremap <CR> :nohl<CR>
 
-" set clipboard+=unnamedplus
+set clipboard=unnamedplus
 
 set directory=~/.vim/tmp
 
